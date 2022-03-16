@@ -443,3 +443,32 @@ header img {
     background-repeat: no-repeat;
     vertical-align: text-bottom;
 }
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer-section--left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+footer .footer-section--left a {
+    text-decoration: none;
+    color: var(--white);
+}
+footer .footer-section--right {
+    margin: 10px 0;
+}
+footer .footer-section--right img {
+width: 90px;
+height: 90px;
+}
