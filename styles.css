@@ -496,6 +496,9 @@ footer .footer-section--left ul {
     line-height: 1.8rem;
     list-style: none;
 }
+footer .footer-section--left ul li {
+    margin-top: 10px;
+}
 footer .footer-section--left a {
     text-decoration: none;
     color: var(--white);
