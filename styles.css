@@ -452,6 +452,7 @@ header img {
     font-weight: 300;
 }
 .plan-card--saving {
+    height: 26px;
     font-size: 1.2rem;
     color: #757575;
 }
