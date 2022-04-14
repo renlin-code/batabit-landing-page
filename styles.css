@@ -7,6 +7,7 @@
 */
 
 :root {
+
     --bitcoin-orange: #f7931a;
     --soft-orange: #ffe9d5;
     --secondary-blue: #1a9af7;
@@ -66,12 +67,13 @@ header img {
 }
 .header--title-container .header--button {
     position: absolute;
-    left: calc(50% - 118px);
+    left: 50%;
+    transform: translateX(-50%);
     top: 270px;
     display: block;
     margin-top: 35px;
     padding: 15px;
-    width: auto;
+    width: 250px;
     height: 48px;
     background-color: var(--off-white);
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
@@ -81,6 +83,11 @@ header img {
     font-weight: bold;
     text-decoration: none;
     color: var(--black);
+    transition: all 0.2s;
+}
+.header--title-container .header--button:hover {
+    background-color: #ffd199;
+    
 }
 .header--button span {
     display: inline-block;
@@ -420,6 +427,10 @@ header img {
     background-color: var(--white);
     border-radius: 16px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+    transition: all 0.2s;
+}
+.plans-container--card:hover {
+    box-shadow: 0 4px 8px rgba(107, 88, 80, 0.4);
 }
 .recommended {
     position: absolute;
@@ -469,6 +480,11 @@ header img {
     line-height: 1.8rem;
     color: var(--black);
     font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.plan-card--ca:hover {
+background-color: #ffd199;
 }
 .plan-card--ca span {
     display: inline-block;
@@ -504,6 +520,9 @@ footer .footer-section--left ul li {
 footer .footer-section--left a {
     text-decoration: none;
     color: var(--white);
+}
+footer .footer-section--left a:hover {
+    color: var(--soft-orange);
 }
 footer .footer-section--right {
     margin: 10px 0;
