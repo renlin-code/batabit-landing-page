@@ -15,7 +15,7 @@ class Coin {
 const coinsDataForRequest = [];
 
 
-const apiRequest = async () => {
+const apiRequest = async (url_api) => {
     try {
         const data = await fetchData(API);
         const firstCoinsData = data.slice(0,4);
