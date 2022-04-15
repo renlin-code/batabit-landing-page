@@ -1,0 +1,23 @@
+{
+  "name": "batabit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "request": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renlin-code/batabit-landing-page.git"
+  },
+  "author": "\"Rene Linares renelj1997@gmail.com\"",
+  "license": "MIT",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  },
+  "bugs": {
+    "url": "https://github.com/renlin-code/batabit-landing-page/issues"
+  },
+  "homepage": "https://github.com/renlin-code/batabit-landing-page#readme"
+}
