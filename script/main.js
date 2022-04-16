@@ -25,9 +25,15 @@ const apiRequest = () => {
             
             let cellPrice = document.getElementById(`p${i}`);
             if (growth[i] === true) {
+<<<<<<< HEAD
                 cellPrice.innerHTML = `$${coinsCurrentPrices[i]}<span id="g${i}" class="trending-up">`;
             } else {
                 cellPrice.innerHTML = `$${coinsCurrentPrices[i]}<span id="g${i}" class="trending-down">`;
+=======
+                cellPrice.innerHTML = `$${coinsCurrentPrices[i]}<span id="g${i}" class="_trending-up">`;
+            } else {
+                cellPrice.innerHTML = `$${coinsCurrentPrices[i]}<span id="g${i}" class="_trending-down">`;
+>>>>>>> 8c176439ff2adb40cb9d05db5cb7b68c596c34a4
             }
         }
 
