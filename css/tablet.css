@@ -1,13 +1,28 @@
+.header--title-container .header--button:hover {
+    background-color: #ffd199;   
+}
+.table--refresh-button:hover {
+    background-color: var(--bitcoin-orange);
+}
 .product-cards--container {
     display: flex;
     flex-wrap: wrap;
     width: 930px;
     margin: 0 auto;
 }
+.plans-container--card:hover {
+    box-shadow: 0 4px 8px rgba(107, 88, 80, 0.4);
+}
+.plan-card--ca:hover {
+    background-color: #ffd199;
+    }    
 .main-tables-container, .plans-container--slider {
     justify-content: center;
     overflow-x: hidden;
 }
 .bitcoin-img-container {
     background-image: url("../assets/images/bitcoinbaby-2x.jpg");
+}
+footer .footer-section--left a:hover {
+    color: var(--soft-orange);
 }

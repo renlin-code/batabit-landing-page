@@ -85,10 +85,6 @@ header img {
     color: var(--black);
     transition: all 0.2s;
 }
-.header--title-container .header--button:hover {
-    background-color: #ffd199;
-    
-}
 .header--button span {
     display: inline-block;
     width: 26px;
@@ -249,9 +245,6 @@ header img {
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     cursor: pointer;
     transition: all 0.2s;
-}
-.table--refresh-button:hover {
-    background-color: var(--bitcoin-orange);
 }
 .currency-table--date {
     width: 190px;
@@ -447,9 +440,6 @@ header img {
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
     transition: all 0.2s;
 }
-.plans-container--card:hover {
-    box-shadow: 0 4px 8px rgba(107, 88, 80, 0.4);
-}
 .recommended {
     position: absolute;
     width: 120px;
@@ -501,9 +491,6 @@ header img {
     cursor: pointer;
     transition: all 0.2s;
 }
-.plan-card--ca:hover {
-background-color: #ffd199;
-}
 .plan-card--ca span {
     display: inline-block;
     width: 20px;
@@ -538,9 +525,6 @@ footer .footer-section--left ul li {
 footer .footer-section--left a {
     text-decoration: none;
     color: var(--white);
-}
-footer .footer-section--left a:hover {
-    color: var(--soft-orange);
 }
 footer .footer-section--right {
     margin: 10px 0;
