@@ -14,7 +14,7 @@
   "author": "\"Rene Linares renelj1997@gmail.com\"",
   "license": "MIT",
   "dependencies": {
-    "xmlhttprequest": "^1.8.0"
+    "node-fetch": "^3.2.3"
   },
   "bugs": {
     "url": "https://github.com/renlin-code/batabit-landing-page/issues"
