@@ -1,6 +1,8 @@
 const API = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false/";
+const animation = document.getElementById("loading-animation");
 
 const apiRequest = () => {
+    animation.style.display = "flex";
     fetch(API)
     .then(response => response.json())
     .then(data => {
@@ -32,10 +34,12 @@ const apiRequest = () => {
         }
 
         console.log(coinsNames, coinsCurrentPrices, growth);
+        animation.style.display = "none";
 })
     .catch(err => {
         console.error(err);
         alert("Ups! El servidor no responde. Inténtelo más tarde :( ");
+        animation.style.display = "none";
     });
 };
 

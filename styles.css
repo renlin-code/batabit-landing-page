@@ -27,6 +27,65 @@ html {
     font-family: 'DM Sans', sans-serif;
     scroll-behavior: smooth;
 }
+.loading-animation {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.loading-animation svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.loading-animation svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke: var(--bitcoin-orange);
+    stroke-dasharray: 220;
+    stroke-dashoffset: 220;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate {
+    0%,100%
+    {
+        stroke-dashoffset: 220;
+    }
+    50%
+    {
+        stroke-dashoffset: 0;
+    }
+    50.1%
+    {
+        stroke-dashoffset: 440;
+    }
+}
+.loading-animation p {
+    padding-top: 10px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+
+}
 header {
     position: relative;
     display: flex;
