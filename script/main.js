@@ -1,13 +1,15 @@
-const API = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false/";
+"use strict"
+const API_URL = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false/";
 const animation = document.getElementById("loading-animation");
 
-const apiRequest = () => {
-    animation.style.display = "flex";
-    fetch(API)
-    .then(response => response.json())
-    .then(data => {
-        const firstCoinsData = data.slice(0,4);
 
+const apiRequest = async () => {
+    try {
+        animation.style.display = "flex";
+        const response = await fetch(API_URL);
+        const data = await response.json();
+    
+        const firstCoinsData = data.slice(0,4);
         const coinsNames = firstCoinsData.map(item => item.name);
         const coinsCurrentPrices = firstCoinsData.map(item => item.current_price);
         
@@ -20,7 +22,7 @@ const apiRequest = () => {
                 growth.push(false);
             }
         };
-
+    
         for (let i = 0; i < coinsNames.length; i++) {
             let cellName = document.getElementById(`n${i}`);
             cellName.innerHTML = coinsNames[i];
@@ -32,15 +34,14 @@ const apiRequest = () => {
                 cellPrice.innerHTML = `$${coinsCurrentPrices[i]}<span id="g${i}" class="trending-down">`;
             }
         }
-
+    
         console.log(coinsNames, coinsCurrentPrices, growth);
-        animation.style.display = "none";
-})
-    .catch(err => {
+        animation.style.display = "none";    
+    } catch(err) {
         console.error(err);
-        alert("Ups! El servidor no responde. Inténtelo más tarde :( ");
+        alert("Ups! Algo salió mal. Inténtelo más tarde :( ");
         animation.style.display = "none";
-    });
+    };
 };
 
 
